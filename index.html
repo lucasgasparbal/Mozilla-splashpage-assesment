@@ -120,16 +120,36 @@
       <div class="further-info">
         <!-- insert images with srcsets and sizes -->
         <a href="https://www.mozilla.org/en-US/firefox/new/">
-          <img>
+          <img srcset="images/firefox-logo-400w.png 400w,
+                       images/firefox-logo-120w.png 120w"
+                sizes="(max-width:500px) 120px,
+                       400px"
+                src="images/firefox-logo-400w.png"
+                alt="The Mozilla Firefox Page"> 
+                
         </a>
         <a href="https://www.mozilla.org/">
-          <img>
+            <img    srcset="images/mozilla-dinosaur-400w.png 400w,
+                            images/mozilla-dinosaur-120w.png 120w"
+                    sizes="(max-width:500px) 120px,
+                       400px"
+                    src="images/mozilla-dinosaur-400w.png"
+                    alt="The Mozilla Homepage"> 
         </a>
         <a href="https://addons.mozilla.org/">
-          <img>
+            <img    srcset="images/firefox-addons-400w.jpg 400w,
+                            images/firefox-addons-120w.jpg 120w"
+                    sizes="(max-width:500px) 120px,
+                       400px"
+                    src="images/firefox-addons-400w.jpg"
+                    alt="The Mozilla Addons page"> 
         </a>
         <a href="https://developer.mozilla.org/en-US/">
-          <img>
+
+            <img    
+                    src="images/mozilla-dinosaur-400w.png"
+                    alt="The Mozilla Developers page"
+                    srcset="images/mdn.svg"> 
         </a>
         <div class="clearfix"></div>
       </div>
@@ -138,7 +158,7 @@
         <!-- insert picture element -->
         <picture>
             <source media="max-width:600px" srcset="images/red-panda-600w.jpg">
-            <source media="min-width:601" srcset="images/red-panda-1200w.jpg">
+            <source media="min-width:601px" srcset="images/red-panda-1200w.jpg">
             <img src="images/red-panda-1200w.jpg" alt="a photo of a red panda snuggling a branch">
         </picture>
       </div>
